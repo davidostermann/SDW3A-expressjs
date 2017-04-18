@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Home page</title>
+  </head>
+  <body>
+    <% include partials/header.ejs %>
+    moi c'est la home page et je dis <%= salutation.toUpperCase() %>
+    <ul>
+    <% candidats.map( item => { %>
+      <li>
+        <%= salutation %> <%= item.nom %>
+      </li>
+    <% }) %>
+    </ul>
+  </body>
+</html>
